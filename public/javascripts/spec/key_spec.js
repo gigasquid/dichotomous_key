@@ -1,35 +1,24 @@
 (function() {
-  describe('panda', function() {
-    return it('is happy', function() {
-      console.log(panda);
-      return expect(panda).toBe('happy');
+  describe('Key', function() {
+    it('has data', function() {
+      return expect(fossil_key.key_data.length).toBe(24);
     });
-  });
-  describe('Animal', function() {
-    return it('has a name', function() {
-      return expect(zebra.name).toBe("Hal");
-    });
-  });
-  describe('Fossil Key', function() {
-    it("has many records", function() {
-      var size;
-      size = fossils_key.length;
-      return expect(size).toBe(24);
-    });
-    it("has a key pair", function() {
-      var first_key;
-      first_key = fossils_key[0];
-      return expect(first_key.key_pair).toBe(1);
-    });
-    it("has a question", function() {
-      var first_key;
-      first_key = fossils_key[0];
-      return expect(first_key.question).toBe("The fossil resembles a modern day seashell");
-    });
-    return it("can have an answer", function() {
-      var key_with_answer;
-      key_with_answer = fossils_key[5];
-      return expect(key_with_answer.answer).toBe("Dunbarella PELECYPOD");
+    return describe('.find_question_pair', function() {
+      it('returns a pair of question data lines', function() {
+        var pair;
+        pair = fossil_key.find_question_pair(1);
+        return expect(pair.length).toBe(2);
+      });
+      return it('returns the matching key_pair for the number argument', function() {
+        var pair;
+        pair = fossil_key.find_question_pair(2);
+        expect(pair[0].key_pair).toBe(2);
+        expect(pair[0].question).toBe("The top side of the fossil is rounded with ribs");
+        expect(pair[0].next_question_pair).toBe(3);
+        expect(pair[1].key_pair).toBe(2);
+        expect(pair[1].question).toBe("The top and bottom of the fossil have ribs and ridges");
+        return expect(pair[1].next_question_pair).toBe(5);
+      });
     });
   });
 }).call(this);

@@ -1,5 +1,5 @@
 (function() {
-  window.fossils_key = [
+  window.fossils_data = [
     {
       key_pair: 1,
       question: "The fossil resembles a modern day seashell",
@@ -14,7 +14,7 @@
       next_question_pair: 3
     }, {
       key_pair: 2,
-      question: "The top and bottom of the fossil hae ribs and ridges",
+      question: "The top and bottom of the fossil have ribs and ridges",
       next_question_pair: 5
     }, {
       key_pair: 3,

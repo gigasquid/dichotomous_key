@@ -1,8 +1,8 @@
-window.fossils_key = [
+window.fossils_data = [
   { key_pair: 1, question: "The fossil resembles a modern day seashell", next_question_pair: 2 },
   { key_pair: 1, question: "The fossil does not resembles a modern day seashell", next_question_pair: 8 },
   { key_pair: 2, question: "The top side of the fossil is rounded with ribs", next_question_pair: 3 },
-  { key_pair: 2, question: "The top and bottom of the fossil hae ribs and ridges", next_question_pair: 5 },
+  { key_pair: 2, question: "The top and bottom of the fossil have ribs and ridges", next_question_pair: 5 },
   { key_pair: 3, question: "The fossil has a circle or oval outline shape", next_question_pair: 4 },
   { key_pair: 3, question: "The fossil has a flat semi-circle shape", answer: "Dunbarella PELECYPOD" },
   { key_pair: 4, question: "The fossil has a circular outline with light ribs", answer: "Glycimeris PELECYPOD" },

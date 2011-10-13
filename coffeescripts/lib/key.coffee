@@ -1,7 +1,9 @@
-window.panda = "happy"
+class Key
+  constructor: (key_data) ->
+    @key_data = key_data
 
-class Animal
-  constructor: (name) ->
-    @name = name
+  find_question_pair: (num) ->
+    pair = (item for item in @key_data when item.key_pair == num)
 
-window.zebra = new Animal("Hal")
+
+window.fossil_key = new Key(fossils_data)
