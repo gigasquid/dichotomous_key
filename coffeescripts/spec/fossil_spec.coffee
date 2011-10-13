@@ -7,9 +7,9 @@ describe 'Fossil Key Data', ->
     first_key = fossils_data[0]
     expect(first_key.key_pair).toBe(1)
 
-  it "has a question", ->
+  it "has a statement", ->
     first_key = fossils_data[0]
-    expect(first_key.question).toBe("The fossil resembles a modern day seashell")
+    expect(first_key.statement).toBe("The fossil resembles a modern day seashell")
 
   it "can have an answer", ->
     key_with_answer = fossils_data[5]

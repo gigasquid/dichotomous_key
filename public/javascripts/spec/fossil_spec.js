@@ -10,10 +10,10 @@
       first_key = fossils_data[0];
       return expect(first_key.key_pair).toBe(1);
     });
-    it("has a question", function() {
+    it("has a statement", function() {
       var first_key;
       first_key = fossils_data[0];
-      return expect(first_key.question).toBe("The fossil resembles a modern day seashell");
+      return expect(first_key.statement).toBe("The fossil resembles a modern day seashell");
     });
     return it("can have an answer", function() {
       var key_with_answer;
