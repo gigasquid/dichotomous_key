@@ -20,6 +20,4 @@ class Key
       {error: "no matching statement"}
 
 
-
-
 window.fossil_key = new Key(fossils_data)

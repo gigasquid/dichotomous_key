@@ -38,6 +38,3 @@ describe 'Key', ->
     it "returns an error if there is no matching statement", ->
       response = fossil_key.choose_statement("blerg")
       expect(response.error).toBe("no matching statement")
-
-
-
