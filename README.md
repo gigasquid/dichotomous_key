@@ -14,20 +14,24 @@ This is a small CoffeScript/ JavaScript library implementing a
 
 ##Usage
 The fossil key is referenced by 
-           fossil_key
+          
+    fossil_key
 
 An example of a key pair of statements is :
-           [ { key_pair: 1, statement: "The fossil resembles a modern day seashell", next_statement_pair: 2 },
-             { key_pair: 1, statement: "The fossil does not resembles a modern day seashell", next_statement_pair: 8 }]
+
+    [ { key_pair: 1, statement: "The fossil resembles a modern day seashell", next_statement_pair: 2 },
+    { key_pair: 1, statement: "The fossil does not resembles a modern day seashell", next_statement_pair: 8 }]
 
 To get the start of the finder
-           fossil_key.start
+
+    fossil_key.start
 
 To get the next statement pair or final answer based on the text chosen:
-           fossil_key.choose_statment ("The fossil resembles a modern day seashell")
+
+    fossil_key.choose_statment ("The fossil resembles a modern day seashell")
 
 It will return either the next key pair of statements or the final answer
-                {answer: "Platystrophia BRACHIOPOD"}
+     {answer: "Platystrophia BRACHIOPOD"}
 
 
 
