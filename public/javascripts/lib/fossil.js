@@ -1,4 +1,84 @@
 (function() {
+  window.specimens = {
+    DunbarellaPELECYPOD: {
+      name: "Dunbarella PELECYPOD",
+      photo_image: "test_photo_image",
+      drawing_image: "test_drawing_image",
+      description: "This is a test description"
+    },
+    GlycimerisPELECYPOD: {
+      name: "Glycimeris PELECYPOD",
+      photo_image: "test_photo_image",
+      drawing_image: "test_drawing_image",
+      description: "This is a test description"
+    },
+    LimaPELECYPOD: {
+      name: "Lima PELECYPOD",
+      photo_image: "test_photo_image",
+      drawing_image: "test_drawing_image",
+      description: "This is a test description"
+    },
+    ZygospiraBRACHIOPOD: {
+      name: "Zygospira BRACHIOPOD",
+      photo_image: "test_photo_image",
+      drawing_image: "test_drawing_image",
+      description: "This is a test description"
+    },
+    SchuchertellaBRACHIOPOD: {
+      name: "Schuchertella BRACHIOPOD",
+      photo_image: "test_photo_image",
+      drawing_image: "test_drawing_image",
+      description: "This is a test description"
+    },
+    PlatystrophiaBRACHIOPOD: {
+      name: "Platystrophia BRACHIOPOD",
+      photo_image: "test_photo_image",
+      drawing_image: "test_drawing_image",
+      description: "This is a test description"
+    },
+    SpiriferBRACHIOPOD: {
+      name: "Spirifer BRACHIOPOD",
+      photo_image: "test_photo_image",
+      drawing_image: "test_drawing_image",
+      description: "This is a test description"
+    },
+    FlexicalymeneTRILOBYTE: {
+      name: "Flexicalymene TRILOBYTE",
+      photo_image: "test_photo_image",
+      drawing_image: "test_drawing_image",
+      description: "This is a test description"
+    },
+    RhomboporaBRYOZOAN: {
+      name: "Rhombopora BRYOZOAN",
+      photo_image: "test_photo_image",
+      drawing_image: "test_drawing_image",
+      description: "This is a test description"
+    },
+    TaxocrinusCRINOID: {
+      name: "Taxocrinus CRINOID",
+      photo_image: "test_photo_image",
+      drawing_image: "test_drawing_image",
+      description: "This is a test description"
+    },
+    DolorthoscerasCEPHALOPOD: {
+      name: "Dolorthosceras CEPHALOPOD",
+      photo_image: "test_photo_image",
+      drawing_image: "test_drawing_image",
+      description: "This is a test description"
+    },
+    GASTROPOD: {
+      name: "GASTROPOD",
+      photo_image: "test_photo_image",
+      drawing_image: "test_drawing_image",
+      description: "This is a test description"
+    },
+    StreptelasmaHORNCORAL: {
+      name: "Streptelasma HORN CORAL",
+      photo_image: "test_photo_image",
+      drawing_image: "test_drawing_image",
+      description: "This is a test description"
+    }
+  };
   window.fossils_data = [
     {
       key_pair: 1,
@@ -23,15 +103,15 @@
     }, {
       key_pair: 3,
       statement: "The fossil has a flat semi-circle shape",
-      answer: "Dunbarella PELECYPOD"
+      specimen: specimens.DunbarellaPELECYPOD
     }, {
       key_pair: 4,
       statement: "The fossil has a circular outline with light ribs",
-      answer: "Glycimeris PELECYPOD"
+      specimen: specimens.GlycimerisPELECYPOD
     }, {
       key_pair: 4,
       statement: "The fossil has an oval outline with a very pointed pedicle",
-      answer: "Lima PELECYPOD"
+      specimen: specimens.LimaPELECYPOD
     }, {
       key_pair: 5,
       statement: "The fossil is larger than pinky fingernail",
@@ -39,7 +119,7 @@
     }, {
       key_pair: 5,
       statement: "The fossil is approximate pinky fingernail size",
-      answer: "Zygospira BRACHIOPOD"
+      specimen: specimens.ZygospiraBRACHIOPOD
     }, {
       key_pair: 6,
       statement: "The fossil has very distinct ribs",
@@ -47,15 +127,15 @@
     }, {
       key_pair: 6,
       statement: "The fossil has faint ribs with a predominant central ridge",
-      answer: "Schuchertella BRACHIOPOD"
+      specimen: specimens.SchuchertellaBRACHIOPOD
     }, {
       key_pair: 7,
       statement: "The fossil has large ribs and very slight ridge",
-      answer: "Platystrophia BRACHIOPOD"
+      specimen: specimens.PlatystrophiaBRACHIOPOD
     }, {
       key_pair: 7,
       statement: "The fossil has predominant ridge and valley",
-      answer: "Spirifer BRACHIOPOD"
+      specimen: specimens.SpiriferBRACHIOPOD
     }, {
       key_pair: 8,
       statement: "The fossil is long and tubular (tube shape) or conical (cone shape)",
@@ -63,7 +143,7 @@
     }, {
       key_pair: 8,
       statement: "The fossil is ribbed with three sections and a lip",
-      answer: "Flexicalymene TRILOBYTE"
+      specimen: specimens.FlexicalymeneTRILOBYTE
     }, {
       key_pair: 9,
       statement: "The fossil is tubular",
@@ -79,23 +159,23 @@
     }, {
       key_pair: 10,
       statement: "The fossil is branching with pin holes",
-      answer: "Rhombopora BRYOZOAN"
+      specimen: specimens.RhomboporaBRYOZOAN
     }, {
       key_pair: 11,
       statement: "The fossil is thin like a pencil and has holes on cross-section",
-      answer: "Taxocrinus CRINOID"
+      specimen: specimens.TaxocrinusCRINOID
     }, {
       key_pair: 11,
       statement: "The fossil is wide with elongating ribs",
-      answer: "Dolorthosceras CEPHALOPOD"
+      specimen: specimens.DolorthoscerasCEPHALOPOD
     }, {
       key_pair: 12,
       statement: "The fossil has a spiral shape",
-      answer: "GASTROPOD"
+      specimen: specimens.GASTROPOD
     }, {
       key_pair: 12,
       statement: "The fossil resembles a dinosaur tooth with radial sections",
-      answer: "Streptelasma HORN CORAL"
+      specimen: specimens.StreptelasmaHORNCORAL
     }
   ];
 }).call(this);

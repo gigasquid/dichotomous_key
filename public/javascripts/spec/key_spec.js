@@ -29,13 +29,13 @@
       });
     });
     return describe('.choose_statement', function() {
-      it('returns the answer if it has one', function() {
-        var answer;
-        answer = fossil_key.choose_statement("The fossil has large ribs and very slight ridge");
-        expect(answer).not.toBeNull();
-        return expect(answer.answer).toBe("Platystrophia BRACHIOPOD");
+      it('returns the specimen if it has one', function() {
+        var specimen;
+        specimen = fossil_key.choose_statement("The fossil has large ribs and very slight ridge");
+        expect(specimen).not.toBeNull();
+        return expect(specimen.name).toBe("Platystrophia BRACHIOPOD");
       });
-      it('returns the next statement pair if there is no answer', function() {
+      it('returns the next statement pair if there is no specimen', function() {
         var pair;
         pair = fossil_key.choose_statement("The fossil is larger than pinky fingernail");
         expect(pair).not.toBeNull();

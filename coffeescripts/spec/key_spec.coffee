@@ -23,12 +23,12 @@ describe 'Key', ->
       expect(pair[0].key_pair).toBe(1)
 
   describe '.choose_statement', ->
-    it 'returns the answer if it has one', ->
-      answer = fossil_key.choose_statement("The fossil has large ribs and very slight ridge")
-      expect(answer).not.toBeNull()
-      expect(answer.answer).toBe("Platystrophia BRACHIOPOD")
+    it 'returns the specimen if it has one', ->
+      specimen = fossil_key.choose_statement("The fossil has large ribs and very slight ridge")
+      expect(specimen).not.toBeNull()
+      expect(specimen.name).toBe("Platystrophia BRACHIOPOD")
 
-    it 'returns the next statement pair if there is no answer', ->
+    it 'returns the next statement pair if there is no specimen', ->
       pair = fossil_key.choose_statement("The fossil is larger than pinky fingernail")
       expect(pair).not.toBeNull()
       expect(pair.length).toBe(2)

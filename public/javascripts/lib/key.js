@@ -33,12 +33,9 @@
         }
         return _results;
       }).call(this);
-      console.log(picked_data);
       if ((picked_data != null) && picked_data.length > 0) {
-        if (picked_data[0].answer != null) {
-          return {
-            answer: picked_data[0].answer
-          };
+        if (picked_data[0].specimen != null) {
+          return picked_data[0].specimen;
         } else {
           return this.find_statement_pair(picked_data[0].next_statement_pair);
         }

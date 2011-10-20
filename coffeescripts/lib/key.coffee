@@ -10,10 +10,9 @@ class Key
 
   choose_statement: (picked_statement_text) ->
     picked_data = (item for item in @key_data when item.statement == picked_statement_text)
-    console.log picked_data
     if picked_data? and picked_data.length > 0
-      if picked_data[0].answer?
-        {answer: picked_data[0].answer}
+      if picked_data[0].specimen?
+        picked_data[0].specimen
       else
         this.find_statement_pair picked_data[0].next_statement_pair
     else
