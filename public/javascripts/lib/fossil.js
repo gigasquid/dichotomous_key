@@ -77,7 +77,7 @@
       key_pair: 2,
       help: "Visually divide the shell in half across the top from the back hindge to front opening.",
       statement: " The right and left sides of the shell are not mirror images of each other.",
-      help_image: "2b_mirrored_2.jpg",
+      help_image: "2b_not_mirrored.png",
       specimen: specimens.PELECYPOD
     }, {
       key_pair: 3,

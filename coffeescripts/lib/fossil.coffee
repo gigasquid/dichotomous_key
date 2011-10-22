@@ -13,7 +13,7 @@ window.fossils_data = [
   { key_pair: 1, statement: "The fossil resembles a modern day seashell", help_image:"1a_seashell_1.png", next_statement_pair: 2 },
   { key_pair: 1, statement: "The fossil does not resemble a modern day seashell", help_image:"1a_seashell_2.png", next_statement_pair: 3 },
   { key_pair: 2, help:"Visually divide the shell in half across the top from the back hindge to front opening.", statement: "The right and left sides of the shell are mirror images of each other.", help_image:"2a_mirrored_1.jpg", specimen: specimens.BRACHIOPOD },
-  { key_pair: 2, help:"Visually divide the shell in half across the top from the back hindge to front opening.", statement: " The right and left sides of the shell are not mirror images of each other.", help_image:"2b_mirrored_2.jpg", specimen: specimens.PELECYPOD },
+  { key_pair: 2, help:"Visually divide the shell in half across the top from the back hindge to front opening.", statement: " The right and left sides of the shell are not mirror images of each other.", help_image:"2b_not_mirrored.png", specimen: specimens.PELECYPOD },
   { key_pair: 3, statement: "The fossil is long and tubular (tube shaped) or conical (cone shaped).", help_image:"3a_tubular.png", next_statement_pair: 4 },
   { key_pair: 3, statement: "The fossil is 'bug shaped', ribbed with three sections, lip and eyes.", help_image:"3b_bug_shape_2.gif", specimen: specimens.TRILOBYTE },
   { key_pair: 4, statement: "The fossil is tubular.", help_image:"4a_tubular.jpg", next_statement_pair: 5 },
