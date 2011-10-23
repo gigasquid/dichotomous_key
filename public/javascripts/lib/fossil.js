@@ -60,18 +60,18 @@
     {
       key_pair: 1,
       statement: "The fossil resembles a modern day seashell",
-      help_image: "1a_seashell_1.png",
+      help_image: "1a_seashell.png",
       next_statement_pair: 2
     }, {
       key_pair: 1,
       statement: "The fossil does not resemble a modern day seashell",
-      help_image: "1a_seashell_2.png",
+      help_image: "1a_seashell_x.png",
       next_statement_pair: 3
     }, {
       key_pair: 2,
       help: "Visually divide the shell in half across the top from the back hindge to front opening.",
       statement: "The right and left sides of the shell are mirror images of each other.",
-      help_image: "2a_mirrored_1.jpg",
+      help_image: "2a_mirrored.png",
       specimen: specimens.BRACHIOPOD
     }, {
       key_pair: 2,
@@ -87,12 +87,12 @@
     }, {
       key_pair: 3,
       statement: "The fossil is 'bug shaped', ribbed with three sections, lip and eyes.",
-      help_image: "3b_bug_shape_2.gif",
+      help_image: "3b_bug_shape.png",
       specimen: specimens.TRILOBYTE
     }, {
       key_pair: 4,
       statement: "The fossil is tubular.",
-      help_image: "4a_tubular.jpg",
+      help_image: "4a_tubular.png",
       next_statement_pair: 5
     }, {
       key_pair: 4,
@@ -102,12 +102,12 @@
     }, {
       key_pair: 5,
       statement: "The fossil has rounded sections.",
-      help_image: "5a_rounded.jpg",
+      help_image: "5a_rounded.png",
       next_statement_pair: 6
     }, {
       key_pair: 5,
       statement: "The fossil is branching with pin holes.",
-      help_image: "5b_branching.jpg",
+      help_image: "5b_branching.png",
       specimen: specimens.BRYOZOAN
     }, {
       key_pair: 6,
@@ -117,17 +117,17 @@
     }, {
       key_pair: 6,
       statement: "The fossil is wide with thick elongating ribs.",
-      help_image: "6b_rounded.jpg",
+      help_image: "6b_rounded.png",
       specimen: specimens.CEPHALOPOD
     }, {
       key_pair: 7,
       statement: "The fossil has a spiral shape.",
-      help_image: "7a_spiral.jpg",
+      help_image: "7a_spiral.png",
       specimen: specimens.GASTROPOD
     }, {
       key_pair: 7,
       statement: "The fossil resembles a dinosaur tooth with radial sections.",
-      help_image: "7b_radial.jpg",
+      help_image: "7b_radial.png",
       specimen: specimens.HORNCORAL
     }
   ];
